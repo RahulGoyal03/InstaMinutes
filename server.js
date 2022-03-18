@@ -2,10 +2,17 @@ const schedule = require("node-schedule"); // require node-schedule for schedule
 
 const { items } = require("./items"); // require data, which have text and dateTime
 
-const delayTime = (time) => new Promise((res) => setTimeout(res, time));  // this is delayTime Function for delay the process for a particular time with the help of SetTimeout
+
+// -----------delayTime Function-------------//
+ // this is delayTime Function for delay the process for a particular time with the help of SetTimeout
+
+const delayTime = (time) => new Promise((res) => setTimeout(res, time)); 
+
 
 
 // --------Reverse Function-------------//
+// this is for reserve the string and return it to the caller function
+
 function reverseString(str) {
   let newString = "";
   for (let i = str.length - 1; i >= 0; i--) {
