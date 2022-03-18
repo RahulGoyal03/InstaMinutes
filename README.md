@@ -1,5 +1,14 @@
 ﻿# InstaMinutes Assignment
 
+# Instructions for run the Assignment 
+
+1. Download VS Code from https://code.visualstudio.com/download
+2. Install NodeJs from https://nodejs.org/en/download/
+3. write on terminal  "git clone https://github.com/RahulGoyal03/HappyCredit.git"
+4. npm install
+5. After that write npm start 
+
+
 # Prerequisites 
 * VS Code
 
