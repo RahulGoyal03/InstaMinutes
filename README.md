@@ -1,40 +1,42 @@
-﻿# InstaMinutes
-* Problem Statement
-Build a scheduler in JS with NodeJS framework and a script to run it for 10 events.
-The event will consist of a text (string) and a date time at which it will run.
-The scheduler must schedule the event to trigger a function at the date time mentioned in the event
-body.
-The trigger function (API) much accept the text as input, sleep for duration of text length and return
-text backwards.
-*Example
-Let say list of events is
-[
-{
-“text”: “textOne”,
-“dateTime”: “2020-07-10 15:00:00.000”
-},
-{
-“text”: “textTwo”,
-“dateTime”: “2020-07-15 14:00:00.000”
-},
-{
-“text”: “textFinal”,
-“dateTime”: “2020-07-15 15:00:00.000”
-}
-]
+﻿# InstaMinutes Assignment
 
-So, the script must go through this list and for each event item, hit NodeJS scheduler API asking it to
-schedule the event (let us say event 1) to trigger the function at “2020-07-10 15:00:00.000”. The
-function must take the text as param (textOne) sleep for (7 seconds) and return/console log
-(enotxet)
-* Expected Solution (Github public repo link/ zip file)
-1. Github link preferrable
-2. The script to loop
-3. NodeJS app hosting scheduling API and trigger function
+# Prerequisites 
+* VS Code
 
-4. One text file explaining your choice of framework/languages, your approach, problems you
-faced, and how you solved them.
 
-* Timeline
-Share your GitHub public repo link in email of your project submission. Submit at
-connect@instaminutes.com before 11:00 am 19/03/22 (Saturday).
+# Installation 
+* Clone the repository
+    ``` 
+    git clone https://github.com/RahulGoyal03/InstaMinutes.git
+    ```
+
+# Tech Stack
+
+* JAVASCRIPT
+* NodeJS
+
+# Approch To Solve -:
+1. Install Nodejs and download the node-scheduler.
+2. Make a items file, which have list of events in a format of 
+   {
+    text: "textOne",
+    dateTime: "2022-03-18 06:10:40.000",
+   }
+3. Iterate through the dat with the help of forEach loop and pass each element/event to the next function i.e scheduleItem.
+4. In the scheduleItem function I have scheduled the job for the given item using scheduleJob function of node-scheduler.
+5. Then I am call the delayTime function for delay the process for a particular time (i.e text.length * 1000) with the help of SetTimeout.
+6. After SetTimeout expires then the next function call is reverseString, which will reverse the string and return back to where it is called.
+7. Now I console the return output from the function reverseString.
+8. And at last I cancel my node-scheduler.
+
+
+# Challenge-:
+I faced one problem that was how to schedule a job for a given date and time. For that I search a lot and after that i found the node-schedule package which is very useful for scheduling a job at a given date.
+
+# Learning-:
+* Learn new npm package node-scheduler.
+* How to schedule a job or event for a given time and delay it with the help of SetTimout.
+
+# Final Output -:
+![Screenshot (144)](https://user-images.githubusercontent.com/91531231/159048877-22d6be82-c887-41be-93e5-ca020564a3bd.png)
+
