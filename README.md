@@ -38,5 +38,6 @@ I faced one problem that was how to schedule a job for a given date and time. Fo
 * How to schedule a job or event for a given time and delay it with the help of SetTimout.
 
 # Final Output -:
-![Screenshot (144)](https://user-images.githubusercontent.com/91531231/159048877-22d6be82-c887-41be-93e5-ca020564a3bd.png)
+![Screenshot (145)](https://user-images.githubusercontent.com/91531231/159049420-940cab82-b2d2-4e7c-87d8-f7e96606548a.png)
+
 
